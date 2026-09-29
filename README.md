@@ -21,7 +21,7 @@ Maquetación, estilos e interfaz del sitio.
 | 1 | Pedro |
 | 2 | Asier |
 | 3 | Diego |
-| 4 | Marcos |
+| 4 | Achraf |
 | 5 | Edison |
 
 ### Equipo 2 — Back-end
@@ -31,7 +31,7 @@ Lógica de servidor, datos y gestión de las noticias.
 | # | Integrante |
 |---|------------|
 | 1 | Ruben |
-| 2 | Achraf |
+| 2 | Marcos|
 | 3 | Gabriel |
 | 4 | Mario |
 | 5 | Paul |
