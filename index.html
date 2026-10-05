@@ -1,39 +1,146 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="estilos.css">
 <title>davplus.click</title>
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    background: #0f1115;
-    color: #e8eaed;
-  }
-  main { max-width: 640px; text-align: center; }
-  h1 { font-size: clamp(2.2rem, 10vw, 4.5rem); margin: 0 0 .75rem; letter-spacing: -.02em; }
-  p { color: #9aa0a6; line-height: 1.6; margin: 0; }
-  .badge {
-    display: inline-block; margin-top: 2rem; padding: .4rem .9rem;
-    border: 1px solid #2a2f37; border-radius: 999px;
-    font-size: .8rem; color: #9aa0a6;
-  }
-</style>
 </head>
+
 <body>
-  <main>
-    <h1>Hola 2º DAW</h1>
-    <p>que es esto??</p>
-    <p>davplus.click</p>
-    <span class="badge">En línea</span>
-  </main>
+  <header id="cabecera">
+        <h1>MEDAC AL DÍA</h1>
+        <img src="/codigoshtmljs/davplus/imagenes/logoMedac1.jpeg" alt="Logo de Medac" width="200px">
+
+        <nav>
+            <ul>
+
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Recuerdos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Opiniones</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ==================== PORTADA ==================== -->
+    <main class="portada">
+
+        <!-- ==================== NOTICIAS PRINCIPALES ==================== -->
+        <article class="principal">
+
+            <section>
+                <img src="https://placehold.co/800x400" alt="Estudiantes de MEDAC durante una actividad">
+                <h2>MEDAC prepara nuevas actividades para el alumnado</h2>
+                <p>El centro prepara nuevas actividades y propuestas para los estudiantes durante este curso.</p>
+            </section>
+
+
+            <section>
+                <img src="https://placehold.co/800x400" alt="Estudiantes de MEDAC comenzando el nuevo curso">
+                <h2>Los estudiantes de MEDAC comienzan un nuevo curso</h2>
+                <p>El alumnado comienza una nueva etapa con nuevos proyectos, actividades y experiencias.</p>
+            </section>
+
+        </article>
+
+        <!-- ==================== NOTICIAS SECUNDARIAS ==================== -->
+        <section class="secundarias">
+
+            <h2>Últimas noticias</h2>
+
+            <article>
+                <img src="https://placehold.co/400x200" alt="Estudiantes trabajando en un proyecto">
+                <h3>Nuevos proyectos para los estudiantes</h3>
+                <p>Los alumnos comienzan nuevos proyectos relacionados con sus estudios.</p>
+            </article>
+
+
+            <article>
+                <img src="https://placehold.co/400x200" alt="Actividad organizada en MEDAC">
+                <h3>El centro organiza nuevas actividades</h3>
+                <p>MEDAC prepara diferentes actividades para el alumnado.</p>
+            </article>
+
+
+            <article>
+                <img src="https://placehold.co/400x200" alt="Clase con estudiantes de MEDAC">
+                <h3>Así son las clases de este curso</h3>
+                <p>Los estudiantes continúan avanzando en sus diferentes ciclos formativos.</p>
+            </article>
+
+
+            <article>
+                <im gsrc="https://placehold.co/400x200" alt="Evento organizado por MEDAC">
+                <h3> Próximos eventos del centro</h3>
+                <p>Consulta las actividades y eventos programadospara las próximas semanas.</p>
+            </article>
+
+
+            <article>
+                <img src="https://placehold.co/400x200" alt="Estudiantes de informática presentando un proyecto">
+                <h3> Los alumnos de informática presentan sus proyectos</h3>
+                <p>Los estudiantes muestran algunos de los trabajosrealizados durante el curso.</p>
+            </article>
+
+
+            <article>
+                <img src="https://placehold.co/400x200" alt="Alumnos participando en una actividad" >
+                <h3>  Nuevas experiencias para el alumnado </h3>
+                <p> Los alumnos podrán participar en nuevas experiencias durante el curso. </p>
+            </article>
+
+        </section>
+
+
+        <!-- ==================== LATERAL ==================== -->
+
+        <aside class="lateral">
+
+            <section>
+                <h2>Lo más leído</h2>
+                <ol>
+                    <li>Las novedades de este curso</
+                    <li>Próximos eventos de MEDAC</li>
+                    <li>Los proyectos de los estudiantes</li>
+                    <li>Actividades para el alumnado</li>
+                    <li>Noticias de nuestro centro</li>
+                </ol>
+            </section>
+
+
+            <section class="publicidad">
+                <p>PUBLICIDAD</p>
+            </section>
+
+
+            <section class="publicidad">
+                <p>PUBLICIDAD</p>
+            </section>
+
+
+            <section class="publicidad">
+                <p>PUBLICIDAD</p>
+            </section>
+
+        </aside>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer id="pie">
+        <p>MEDAC AL DÍA</p>
+        <p>Inicio | Noticias | Recuerdos | Eventos | Opiniones</p>
+        <p>Instagram | X | YouTube</p>
+        <p>Aviso legal | Política de privacidad</p>
+        <p>© 2026 MEDAC AL DÍA - Todos los derechos reservados</p>
+    </footer>
+
 </body>
+
 </html>

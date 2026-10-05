@@ -1,0 +1,278 @@
+
+/* ============================================================
+   VARIABLES
+   ============================================================ */
+
+:root {
+    --color-principal: #111111;
+    --color-acento: #E63946;
+    --color-fondo: #F1FAEE;
+
+    --espacio-pequeno: 8px;
+    --espacio-medio: 16px;
+    --espacio-grande: 32px;
+}
+
+/* ============================================================
+   GENERAL
+   ============================================================ */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--color-principal);
+    background-color: white;
+}
+
+
+h1,h2,h3 {
+    font-family: Georgia, serif;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ============================================================
+   CABECERA
+   ============================================================ */
+
+#cabecera {
+    padding: var(--espacio-grande);
+    border-bottom: 3px solid var(--color-principal);
+    text-align: center;
+    background-color: #003590;
+}
+
+
+#cabecera h1 {
+    font-size: 42px;
+    margin: 0 0 var(--espacio-medio) 0;
+}
+
+
+/* ============================================================
+   NAVEGACIÓN
+   ============================================================ */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--espacio-medio);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: var(--color-acento);
+}
+
+
+/* ============================================================
+   PORTADA
+   ============================================================ */
+
+.portada {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espacio-grande);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espacio-grande);
+}
+
+
+/* ============================================================
+   NOTICIA PRINCIPAL
+   ============================================================ */
+
+.principal {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espacio-medio);
+    background-color: #0035903f;
+}
+
+
+.principal section {
+    border: 1px solid #dddddd;
+    padding: var(--espacio-medio);
+}
+
+
+.principal h2 {
+    margin-top: var(--espacio-medio);
+    margin-bottom: var(--espacio-pequeno);
+}
+
+
+.principal h2:hover {
+    color: var(--color-acento);
+}
+
+
+/* ============================================================
+   NOTICIAS SECUNDARIAS
+   ============================================================ */
+
+.secundarias {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+    gap: var(--espacio-medio);
+}
+
+
+.secundarias > h2 {
+    grid-column: 1 / -1;
+}
+
+
+.secundarias article {
+    border: 1px solid #dddddd;
+    padding: var(--espacio-medio);
+}
+
+
+.secundarias h3 {
+    margin-top: var(--espacio-medio);
+    margin-bottom: var(--espacio-pequeno);
+}
+
+
+.secundarias h3:hover {
+    color: var(--color-acento);
+}
+
+
+/* ============================================================
+   LATERAL
+   ============================================================ */
+
+.lateral {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-grande);
+}
+
+
+/* ============================================================
+   PUBLICIDAD
+   ============================================================ */
+
+.publicidad {
+    min-height: 250px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ============================================================
+   LISTA "LO MÁS LEÍDO"
+   ============================================================ */
+
+.lateral section:not(.publicidad) {
+    border: 1px solid #dddddd;
+    padding: var(--espacio-medio);
+}
+
+
+.lateral section:not(.publicidad) h2 {
+    margin-top: 0;
+}
+
+
+.lateral li {
+    margin-bottom: var(--espacio-medio);
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+#pie {
+    margin-top: var(--espacio-grande);
+    padding: var(--espacio-grande);
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    /* Cabecera */
+
+    #cabecera {
+        padding: var(--espacio-medio);
+    }
+
+
+    #cabecera h1 {
+        font-size: 30px;
+    }
+
+
+    /* Menú */
+
+    nav ul {
+        flex-direction: column;
+        gap: var(--espacio-pequeno);
+    }
+
+
+    /* Portada */
+
+    .portada {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Noticia principal */
+
+    .principal {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Noticias secundarias */
+
+    .secundarias {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Lateral */
+
+    .lateral {
+        grid-column: 1;
+    }
+
+}
