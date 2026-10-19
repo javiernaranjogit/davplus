@@ -29,8 +29,25 @@ Servidor, base de datos y gestión de noticias.
 ```
 index.html          -> portada
 estilos.css         -> todos los estilos de la web
+suscribir.php       -> guarda los correos de la newsletter
 noticias/           -> una página HTML por noticia
 imagenes/           -> fotos de las noticias
+```
+
+## Newsletter
+
+El formulario de la portada envía el correo a `suscribir.php`, que lo guarda en un CSV con la fecha y el correo:
+
+```
+/var/www/davplus-datos/suscriptores.csv
+```
+
+El CSV está fuera de la carpeta pública a propósito: si estuviera dentro de `davplus/`, cualquiera podría descargarse la lista de correos. Si un correo ya está apuntado, no se repite.
+
+En local, `suscribir.php` crea la carpeta `davplus-datos/` al lado de la del proyecto la primera vez que alguien se suscribe. Para probarlo hace falta PHP:
+
+```bash
+php -S localhost:8000
 ```
 
 ## Normas
