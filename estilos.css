@@ -572,6 +572,15 @@ h1, h2, h3, h4 {
     background-color: var(--negro);
 }
 
+/* Texto pequeño de privacidad debajo del formulario */
+.newsletter .aviso-privacidad {
+    max-width: 520px;
+    margin: 15px 0 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #c4d1f2;
+}
+
 
 /* ----------------------------------------------------------
    10. PIE DE PÁGINA
