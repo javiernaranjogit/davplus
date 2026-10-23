@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /suscribir.php
+
+Sitemap: https://davplus.click/sitemap.xml
