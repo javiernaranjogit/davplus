@@ -170,22 +170,14 @@ h1, h2, h3, h4 {
     padding-bottom: 25px;
 }
 
-/* Logo "dav+" hecho con texto */
+/* Logo de dav+ (imagen con fondo transparente) */
 .logo {
-    font-family: var(--fuente-texto);
-    font-size: 56px;
-    font-weight: 800;
-    letter-spacing: -2px;
-    color: var(--blanco);
+    display: block;
 }
 
-.logo .mas {
-    display: inline-block;
-    margin-left: 4px;
-    padding: 0 8px;
-    background-color: var(--blanco);
-    color: var(--azul);
-    border-radius: 6px;
+.logo img {
+    height: 70px;
+    width: auto;
 }
 
 .lema {
@@ -598,8 +590,8 @@ h1, h2, h3, h4 {
     gap: 40px;
 }
 
-.pie .logo {
-    font-size: 40px;
+.pie .logo img {
+    height: 55px;
 }
 
 .pie .descripcion p {
@@ -810,8 +802,8 @@ h1, h2, h3, h4 {
         gap: 10px;
     }
 
-    .logo {
-        font-size: 44px;
+    .logo img {
+        height: 55px;
     }
 
     .lema {

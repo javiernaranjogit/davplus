@@ -78,7 +78,7 @@ if (!filter_var($correo, FILTER_VALIDATE_EMAIL) || strlen($correo) > 100) {
     <!-- CABECERA -->
     <header class="cabecera">
         <div class="contenedor">
-            <a href="index.html" class="logo">dav<span class="mas">+</span></a>
+            <a href="index.html" class="logo"><img src="imagenes/logo-dav.png" alt="dav+"></a>
             <div class="lema">
                 <p>El periódico de Davante Móstoles</p>
                 <small>Hecho por alumnos y profesores del campus · Nº 1</small>
