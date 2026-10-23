@@ -64,6 +64,12 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
+/* Iframe de Google Tag Manager (solo para navegadores sin JavaScript): no debe verse */
+.gtm-noscript {
+    display: none;
+    visibility: hidden;
+}
+
 /* Contenedor que centra el contenido de cada bloque */
 .contenedor {
     max-width: var(--ancho-maximo);

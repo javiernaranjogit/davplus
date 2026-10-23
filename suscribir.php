@@ -62,6 +62,14 @@ if (!filter_var($correo, FILTER_VALIDATE_EMAIL) || strlen($correo) > 100) {
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KZXCDL7T');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRT5NM4X61"></script>
     <script>
@@ -84,6 +92,9 @@ if (!filter_var($correo, FILTER_VALIDATE_EMAIL) || strlen($correo) > 100) {
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZXCDL7T" class="gtm-noscript" height="0" width="0"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- CABECERA -->
     <header class="cabecera">
